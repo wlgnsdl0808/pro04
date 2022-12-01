@@ -48,7 +48,7 @@
         <button class="orbit-previous" aria-label="previous"><span class="show-for-sr">Previous Slide</span>&#9664;</button>
         <button class="orbit-next" aria-label="next"><span class="show-for-sr">Next Slide</span>&#9654;</button>
         <li class="orbit-slide is-active">
-          <img src="https://placeimg.com/2000/750/any" alt="더미이미지">
+          <img src="../data/main1.png" alt="더미이미지">
         </li>
         <li class="orbit-slide">
           <img src="https://placeimg.com/2000/750/animals" alt="더미이미지">

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC 
+"-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="board">
+<select id="boardList" resultType="com.kt.dto.BoardDTO">
+		select * from board
+	</select>
+	<select id="boardDetail" resultType="com.kt.dto.BoardDTO">
+		select * from board
+	</select>
+	<insert id="boardInsert">
+		insert into board (title, content) values #{title}, #{content}
+	</insert>
+</mapper>
+<!-- namespace나 해당 명령의 id는 중복되면 절대 안됨 -->

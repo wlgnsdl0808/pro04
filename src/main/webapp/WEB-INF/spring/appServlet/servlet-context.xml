@@ -22,6 +22,7 @@
 	<resources mapping="/qna/**" location="/WEB-INF/views/qna" />
 	<resources mapping="/databank/**" location="/WEB-INF/views/databank" />
 	<resources mapping="/util/**" location="/WEB-INF/views/util" />
+	<resources mapping="/data/**" location="/WEB-INF/views/data" />
 	<resources mapping="/sample/**" location="/WEB-INF/views/sample"></resources>
 
 	<!-- 리졸버에 대한 접두사와 접미사 설정 -->
@@ -43,7 +44,7 @@
 	
 	<!-- 기본 메인 패키지 및 컨트롤러 패키지 설정 -->
 	<context:component-scan base-package="com.kt" />
-	
-	<!-- 트랜잭션 및 DB 패키지 방안 및 각 종 로깅과 보안 설정 -->
+
+	<!-- 인터셉터 : 글쓰기와 같은 회원권한을 가진 경우는 반드시 로그인 페이지를 거쳐서 시도할 것 -->
 	
 </beans:beans>
